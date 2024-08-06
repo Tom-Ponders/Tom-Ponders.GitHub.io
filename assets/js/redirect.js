@@ -4,6 +4,9 @@ window.addEventListener('load', () => {
     const normalizedPath = path.toLowerCase();
     
     if (path !== normalizedPath) {
-        window.location.href = normalizedPath;
+        //window.location.href = normalizedPath; //if file name is lowcase
+        
+        //redirect to lowercase url
+        window.location.replace(normalizedPath);
     }
 });
